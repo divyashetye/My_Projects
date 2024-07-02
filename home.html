@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prognoz Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        #bar a{font-size: large;color: rgb(78, 77, 77);}
+        #colorbox{height: 120px; width: 8px; background-image: linear-gradient(blue,violet);}
+        .footer ul{list-style-type: none;}
+        .footer li{padding-top: 5px;}
+        .footer li a{color: white;}
+        #Policy a{color: white;}
+        .footer{font-size: small;}
+        .copyrights{font-size: small;}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="p-1" style="background-color: #3437eb;"></div>
+
+            <div class="container-fluid mt-3" id="bar">
+               
+            <ul class="nav nav-pills nav-justified">
+                <a href="#" class="nav-item nav-link"><img src="Images/prognozlogo.webp" height="60" width="300" alt=""></a>
+            
+                <li class="nav-item"><a href="/" class="nav-link active" style="color: white;">HOME</a></li>
+                <li class="nav-item"><a href="#about-us" class="nav-link">ABOUT US</a></li>
+
+                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">STUDENT DETAILS</a>
+                <div class="dropdown-menu">
+                    <a href="/register" class="dropdown-item">Registration Form</a>
+                    <a href="/update" class="dropdown-item">Update Details</a>
+                    <a href="/delete" class="dropdown-item">Delete Details</a>
+                    <a href="/test4" class="dropdown-item">View Details</a>
+                </div>
+                </li>
+
+                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">BATCH INFO</a>
+                <div class="dropdown-menu">
+                    <a href="/batch-info" class="dropdown-item">Create Batch</a>
+                    <a href="/batch" class="dropdown-item">View Student Details in Batch</a>
+                    <a href="/batch-modify" class="dropdown-item">Modify Batch Details</a>
+                    <a href="/batch-remove" class="dropdown-item">Remove Batch</a>
+                </div>
+                </li>
+
+                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ATTENDANCE</a>
+                <div class="dropdown-menu">
+                    <a href="/markattendance" class="dropdown-item">Mark Attendance on Batchwise</a>
+                    <a href="/attend" class="dropdown-item">View Attendance on Batchwise</a>
+                    <a href="/modify-attendance" class="dropdown-item">Modify Attendance Details</a>
+                    <a href="/remove-attendance" class="dropdown-item">Remove Attendance Details</a>
+                </div>
+                </li>
+                
+                <li class="nav-item"><a href="/login" class="nav-link">LOGIN</a></li>
+                <li class="nav-item"><a href="/contactus" class="nav-link">CONTACT US</a></li>
+                
+            </ul>
+        </div>
+        </div>
+        </nav>
+    </header>
+
+    <div class="carousel carousel-fade" id="myC" data-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="Images/banner01.jpg" height="400" alt="">
+
+                <div class="carousel-caption">
+                 <h3>TRAINING with PLACEMENT</h3>
+                 <a href="#">--Click to know more--</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/banner02.jpg" height="400" alt="">
+
+                <div class="carousel-caption">
+                    <h3>OFFLINE & ONLINE Courses</h3>
+                    <p>Placement Assured</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/banner03.jpg" height="400" alt="">
+
+                <div class="carousel-caption">
+                    <h3>Jobs and Career</h3>
+                    <p>Unlimited Opportunities. Get job in any Metro in India.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#myC" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myC" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myC" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        
+     </div>
+
+     <section class="Courses">
+        <div class="container">
+            <div class="btn-group btn-group-lg m-4">
+                <a href="#" class="btn text-white p-4 m-3" style="background-image: url(Images/wooden\ bg.jpeg);box-shadow: 3px 8px 3px #4d2b1b;">
+                    <i class="bi bi-globe"></i> Online Courses</a>
+                <a href="#" class="btn text-white p-4 m-3" style="background-image: url(Images/wooden\ bg.jpeg);box-shadow: 3px 8px 3px #4d2b1b;">
+                    <i class="bi bi-backpack2"></i> Offline Courses</a>
+                <a href="" class="btn text-white p-4 m-3" style="background-image: url(Images/wooden\ bg.jpeg);box-shadow: 3px 8px 3px #4d2b1b;">
+                    <i class="bi bi-pc-display-horizontal"></i> Testimonials</a>
+                <a href="" class="btn text-white p-4 m-3" style="background-image: url(Images/wooden\ bg.jpeg);box-shadow: 3px 8px 3px #4d2b1b;">
+                    <i class="bi bi-hand-thumbs-up"></i> Placement List</a>
+            </div>
+        </div>
+     </section>
+    
+     <section class="About us" id="about-us">
+     <div class="container">
+        <div class="media">
+        <div class="media-left">
+      <img src="Images/about-us.png" class="media-object mr-5" width=350>
+    </div>
+      <div class="media-body">
+        <h2 class="media-heading" style="color: #7703fc;">PROGNOZ TECHNOLOGIES</h2>
+        <p>We provide IT industry validated Job Assured Placement Programs for Freshers. The courses are: <span style="color: #03adfc;">Data Science with Python, Machine Learning & AI, Cloud Computing with AWS, Python Web Development, Full Stack Web Development, Java Technology, .NET Technology, PHP Web Development</span> and <span style="color: #03adfc;"> Software Testing.</span> In addition, we also provide Technical Skill Upgradation Courses for career advancement of working professionals.</p>
+        <p>The courses are conducted in <span style="color: #03adfc;">ONLINE</span> and <span style="color: #03adfc;">OFFLINE </span>modes.</p>
+        <p>Our dedicated placement cell ensures that every candidate gets placed in reputed company. Upon the completion of our course, our candidates are ready to face the industrial challenges in an effective manner. We create that "wow factor" in our candidates which not only helps them in securing an excellent job but also helps them build a dream career.</p>
+        <p>For beginners in programming and other IT subjects, we provide Self Paced <span style="color: #03adfc;">FREE COURSES</span>, ably supported by our technical team.</p>
+        <p>For Colleges (all India), we act as partner for providing placement to the students through our College Placement Support Program.</p>
+        <p>For Corporate (all India), we act as one stop recruiting partner. We provide right skilled candidates who are productive right from day one.</p>
+    </div>
+     </div>
+     </div>
+    </section>
+
+    <div class="carousel carousel-slide mt-4" id="C2" data-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="Images/compbg.png" height="300" width="1530" alt="">
+
+                <div class="carousel-caption">
+                 <h3>WHAT OUR TRAINEES SAY</h3><br>
+                 <p>Joining course after BE in Prognoz, really proved helpful for me for getting a job. I got placed in CAPGEMINI because of this java certification only which I did from Prognoz</p>
+                 <div class="row">
+                    <div class="col">Anuradha Dhamal (BE - EXTC) A.C. Patil COE, Kharghar</div>
+                    <div class="col">Company: Capgemini - Java Developer</div>
+                 </div><br><br>
+                 <a href="#">View all</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/compbg.png" height="300" width="1530" alt="">
+
+                <div class="carousel-caption">
+                <h3>WHAT OUR TRAINEES SAY</h3><br><br>
+                <p>Prognoz provides very good training and placement service. They provided very good projects which helped me to improve technical skills.</p>
+                <div class="row">
+                    <div class="col">Suraj Patil (BSc-IT) Vidyalankar Institute, Wadala</div>
+                    <div class="col">Company: Planfirma Technologies - Dot Net Developer</div>
+                 </div><br><br>
+                 <a href="#">View all</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/compbg.png" height="300" width="1530" alt="">
+
+                <div class="carousel-caption">
+                    <h3>WHAT OUR TRAINEES SAY</h3><br><br>
+                    <p>A good institute for assured Placement and good practices of sessions done. Successfully got placed in very less time. Thanks to all Prognoz staff.</p>
+                    <div class="row">
+                        <div class="col">Darshana Pansare (BE-IT) Y.T.C.E.M, Karjat</div>
+                        <div class="col">Company: Krypton Infomedia - PHP Developer</div>
+                     </div><br><br>
+                     <a href="#">View all</a>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#C2" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#C2" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#C2" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        
+     </div>
+
+     <section class="Companies">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div id="colorbox">
+                        <div class="ml-3">
+                        <h4 style="color: #7703fc;">What Recruiting Companies Say...</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                <img src="Images/1.jpg" alt="">
+                <img src="Images/2.jpg" alt="">
+                <img src="Images/3.jpg" alt="">
+                <img src="Images/4.jpg" alt="">
+                <img src="Images/5.jpg" alt="" width="150">
+                <img src="Images/6.jpg" alt="" width="150">
+                <img src="Images/7.jpg" alt="" width="150">
+                <img src="Images/8.jpg" alt="" width="150">
+                <img src="Images/9.jpg" alt="">
+                <img src="Images/10.jpg" alt="">
+                <img src="Images/11.jpg" alt="">
+                <img src="Images/12.jpg" alt="">
+                <img src="Images/13.jpg" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <footer class="footer" style="background-image: url(Images/bluebg.jpeg);">
+        <div class="container-fluid mt-5 pt-3" >
+            <div class="row">
+                <div class="col-sm-7 ml-4">
+                <h5 style="color: #03adfc;font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: bold;" ><u>Important Links</u></h5>
+                </div>
+                <div class="col-sm ml-3">
+                <h5 style="color: #03adfc;font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: bold;"><u>Contact Us</u></h5>
+            </div>
+            </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Placement</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                </div>
+
+                <div class="col-sm">
+                    <ul>
+                        <li><a href="#">Java Certification Course in Mumbai</a></li>
+                        <li><a href="#">Cloud Computing with AWS</a></li>
+                        <li><a href="#">Java Training with Placements</a></li>
+                        <li><a href="#">S/w Testing Training & Placements</a></li>
+                        <li><a href="#">.NET Training & Placements</a></li>
+                        <li><a href="#">Python Training in Mumbai</a></li>
+                        <li><a href="#">Job oriented Courses</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <ul>
+                        <li><a href="#">Full Stack Developer Course</a></li>
+                        <li><a href="#">Data Analysis Training in Mumbai</a></li>
+                        <li><a href="#">Data Science Course</a></li>
+                        <li><a href="#">Online Training with Placement</a></li>
+                        <li><a href="#">Prognoz E-Learning Classroom</a></li>
+                        <li><a href="#">Current Job Openings</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-5">
+                    <ul style="color: white;">
+                    <li>Navi Mumbai (Head Office)</li>
+                    <li>Mob: +91-8454071212 Tel: +91-22-27814262 Email: info@prognoztech.com</li>
+                    <br>
+                    <li>Delhi & NCR - Mob: +91-9643261252</li>
+                    <li>Bangalore - Mob: +91-9967032361</li>
+                    <li>Chennai - Mob: +91-9841160863</li>
+                    <li>Patna - Mob: +91-7677472680</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+     </footer>
+
+     <div class="copyrights" style="background-image: url(Images/bluebg.jpeg);">
+        <div class="container-fluid p-3">
+            <div class="row">
+                <div class="col-md-9 text-white ml-5">
+                 Copyright
+                 <span id="cur_year"></span>
+                 <script>
+                    var date=new Date();
+                    var year=date.getFullYear();
+                    document.getElementById("cur_year").innerHTML=year;
+                 </script>
+                  © Prognoz Technologies Pvt. Ltd. All Rights Reserved.
+                </div>
+                <div class="col-md text-white" id="Policy">
+                    <a href="#">Privacy Policy</a>|
+                    <a href="#">Terms of Use</a>|
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

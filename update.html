@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body{background-image: url(Images/formbg2.avif);background-size: cover;}
+        .paint{margin-top: 10px;margin-right: 30px;}
+        .paint{color: white;}
+        a:hover{color: white;}
+        .card{border: 2px solid rgb(97, 94, 94);}
+        label{color: red;}
+        h3{text-align: center;}
+        .copyrights{font-size: small;margin-top: 100px;}
+        #Policy a{color: white;}
+    </style>
+</head>
+<body>
+    <div style="text-align: right;">
+        <a href="/" class="btn btn-lg btn-info btn-outline-dark paint">BACK TO HOME</a>
+        </div>
+
+    <div class="mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+        <div class="card">
+        <div class="card-header">
+            <h3>Student Update Details</h3>
+        </div>
+        <div class="card-body">
+    <form action="update-data" method="post" class="registration-form">
+        <div class="form-group">
+            <label for="txtId">Enter Student Id</label>
+            <input type="text" name="sid" id="txtId" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="txtName">Enter Student Name</label>
+            <input type="text" name="sname" id="txtName" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label for="txtEmail">Enter Student Email</label>
+            <input type="email" name="email" id="txtEmail" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="txtAge">Enter Student Age</label>
+            <input type="text" name="age" id="txtAge" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label for="txtCity">Enter Student City</label>
+            <input type="text" name="city" id="txtCity" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="txtState">Enter Student State</label>
+            <input type="text" name="state" id="txtState" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="txtCountry">Enter Student Country</label>
+            <input type="text" name="country" id="txtCountry" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="txtMarks">Enter Student Marks</label>
+            <input type="text" name="marks" id="txtMarks" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Update" class="btn btn-primary">
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+<footer style="background-image: url(Images/bluebg.jpeg);">
+    <div class="copyrights p-3">
+            <div class="row">
+                <div class="col-md-9 text-white ml-5">
+                 Copyright
+                 <span id="cur_year"></span>
+                 <script>
+                    var date=new Date();
+                    var year=date.getFullYear();
+                    document.getElementById("cur_year").innerHTML=year;
+                 </script>
+                  © Prognoz Technologies Pvt. Ltd. All Rights Reserved.
+                </div>
+                <div class="col-md text-white" id="Policy">
+                    <a href="#">Privacy Policy</a>|
+                    <a href="#">Terms of Use</a>|
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
